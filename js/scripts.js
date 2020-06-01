@@ -26,6 +26,19 @@ let newSentence = reverseString(newWord);
 
 console.log(words + newSentence);
 
+function divide() {
+  const sentenceLength = words.length;
+  let sentenceDiv = Math.floor(sentenceLength/2);
+  console.log(sentenceDiv);
+  let middleChar = words.charAt(sentenceDiv);
+  console.log(middleChar);
+ 
+  return halfSentence
+}
+
+// console.log(halfSentence);
+console.log(divide());
+
 
 // function concatWords(concat) {
 //   let concat = (words + reverseString);
