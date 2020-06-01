@@ -1,6 +1,7 @@
 // This is back-end code
+const words = prompt("Enter your sentence.");
+
 function userSentence() {
-  const words = prompt("Enter your sentence.");
   let firstLetter = words.charAt(0);
   let lastNumber = words.length;
   let lastLetter = words.charAt(lastNumber - 1);
@@ -21,7 +22,18 @@ function reverseString(str) {
 let newWord = userSentence();
 console.log(reverseString(newWord));
 
-// console.log(newWord);
+let newSentence = reverseString(newWord);
+
+console.log(words + newSentence);
+
+
+// function concatWords(concat) {
+//   let concat = (words + reverseString);
+//   return concat;
+// }
+
+
+// console.log(concatWords);
 
 
 // let firstLetter = userSentence.charAt(0);
