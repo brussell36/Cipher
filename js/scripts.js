@@ -11,6 +11,18 @@ function userSentence() {
 
 console.log(userSentence());
 
+function reverseString(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray
+}
+
+let newWord = userSentence();
+console.log(reverseString(newWord));
+
+// console.log(newWord);
+
 
 // let firstLetter = userSentence.charAt(0);
 // // let lastLetter = userSentence.lastIndexOf();
@@ -25,6 +37,7 @@ console.log(userSentence());
 // this is front-end code
 // $(document).ready(function(){
 //   $(button).click(function);
+      // $("#output").text(result); 
 //    
     
   // });
