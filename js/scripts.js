@@ -6,8 +6,7 @@ function userSentence() {
   let lastNumber = words.length;
   let lastLetter = words.charAt(lastNumber - 1);
   let newWords = firstLetter + lastLetter;
-  return newWords.toUpperCase();
-    
+  return newWords.toUpperCase();    
 }
 
 console.log(userSentence());
@@ -32,12 +31,11 @@ function divide() {
   console.log(sentenceDiv);
   let middleChar = words.charAt(sentenceDiv);
   console.log(middleChar);
- 
-  return halfSentence
+  return middleChar
 }
 
 // console.log(halfSentence);
-console.log(divide());
+console.log(divide() + words + newSentence);
 
 
 // function concatWords(concat) {
