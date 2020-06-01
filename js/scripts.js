@@ -1,9 +1,15 @@
 // This is back-end code
 function userSentence() {
   const words = prompt("Enter your sentence.");
-  return words.charAt(0);
+  let firstLetter = words.charAt(0);
+  let lastNumber = words.length;
+  let lastLetter = words.charAt(lastNumber - 1);
+  return (firstLetter + lastLetter);
     
 }
+
+console.log(userSentence());
+
 
 // let firstLetter = userSentence.charAt(0);
 // // let lastLetter = userSentence.lastIndexOf();
@@ -13,7 +19,7 @@ function userSentence() {
 
 
 // prompt(words);
-console.log(userSentence());
+
 
 // this is front-end code
 // $(document).ready(function(){
