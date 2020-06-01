@@ -4,7 +4,8 @@ function userSentence() {
   let firstLetter = words.charAt(0);
   let lastNumber = words.length;
   let lastLetter = words.charAt(lastNumber - 1);
-  return (firstLetter + lastLetter);
+  let newWords = firstLetter + lastLetter;
+  return newWords.toUpperCase();
     
 }
 
